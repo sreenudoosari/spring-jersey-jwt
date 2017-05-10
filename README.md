@@ -46,4 +46,4 @@ public class ProductRestResource {
 # Conclusion
 Hope this short explanation is helpful to you to understand the basic concepts.<br>
 **Your comments and suggestions are most welcome!** <br>
-You can follow me on [@SreenuDoosari](https://twitter.com/SreenuDoosari)
+Cheers! <br> [@SreenuDoosari](https://twitter.com/SreenuDoosari)
