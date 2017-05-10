@@ -30,11 +30,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         UsernamePasswordAuthenticationFilter.class);
     }
 	 
-	@Autowired
-	public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
-		auth.jdbcAuthentication().dataSource(dataSource)
-				.usersByUsernameQuery("select username,password, enabled from users where username=?")
-				.authoritiesByUsernameQuery("select username, role from user_roles where username=?");
-	}
+    //NOTE : Use this when you want authentication with database
+//	@Autowired
+//	public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
+//		auth.jdbcAuthentication().dataSource(dataSource)
+//				.usersByUsernameQuery("select username,password, enabled from users where username=?")
+//				.authoritiesByUsernameQuery("select username, role from user_roles where username=?");
+//	}
+	
+    //InMemoryAuthentication 
+    //NOTE : delete this when you want authentication with database
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        // Create a default account
+        auth.inMemoryAuthentication().withUser("jwtadmin").password("jwtadmin").roles("ADMIN");
+    }
 
 }

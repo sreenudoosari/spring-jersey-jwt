@@ -13,18 +13,17 @@ import com.sd.example.jwt.filter.JWTTokenNeeded;
 
 @Component
 @Path("/products")
+@Produces({ MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN })
 public class ProductRestResource {
 
 	@GET
-	@Produces({ MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN })
 	public Response findAllPublicProducts() {
 		return Response.status(Status.OK).entity("{\"message\":\"Public products list\"}").build();
 	}
 
 	@GET
 	@Path("/secure")
-	@Produces({ MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN })
-	@JWTTokenNeeded
+	@JWTTokenNeeded //this annotation verifies the authentication of the user and his token if logged in.
 	public Response findAllPrivateProducts() {
 		return Response.status(Status.OK).entity("{\"message\":\"Secured products list\"}").build();
 	}
