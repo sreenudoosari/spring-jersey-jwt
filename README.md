@@ -3,7 +3,7 @@ With this sample application, I want to show you,
 
   - How to create and verify a JSON web token (JWT)
   - How to use JWT with Jersey and SpringBoot 
-  inorder to invoke some secured endpoints using a simple annotation.
+  inorder to invoke some secured endpoints using a simple **annotation**.
 # So what is JWT ?
 JWT is just a token format or it defines a token format which is compact and self-contained and can be used  for securely transmitting information between parties as a JSON object. This token can be verified and trusted because it is digitally signed.<br>
 More about JWT can be found here <a href="https://jwt.io/introduction/">JWT Introduction</a><br>
@@ -11,7 +11,6 @@ More about JWT can be found here <a href="https://jwt.io/introduction/">JWT Intr
 # But what is the purpose of a security token ?
 Security tokens are protected data structures<br>
 They contain information about issuer and subject<br>
-They are signed ( tamper proof & authenticity)<br>
 Tipically contain an expiration time<br>
 
 # Before JWT ?
