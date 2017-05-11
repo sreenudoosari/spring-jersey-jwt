@@ -73,6 +73,16 @@ class TokenAuthenticationService {
 # Sequence Diagram 
 ![PlantUML model](http://www.plantuml.com/plantuml/png/bL5BJm8n4BxtLqpgOIyIq7ZQH18rQg8c4C1uuLBQWHrTshMFRD3utorR5f1e8eScVNpFgP3UMBWf2RM74ukAPJ0f48mkLw1eFaUBMYBCqDU86iGQppAX5LJ2Uf9KYSWa1pwob1KrwGNRV-93QrIGVeHklKom4gSwwrRfscKSX8DXc9KaZo9s7SfWCV77pVud_-5bycGMfE-ez6Yd6h9kkJudHlF4WANkdNvAaCFzxGH6-1wYAtHWBoTBY4u_CN8ux_LWy1X1m9Ved5WWpsFg1WKj3KfodczTKiw_NTfIB05tPXUzCtZM8lZ2MFg8_zGgDZro60x6EyMQV07NHgqkFtbmQBLOncpyjVP2BKdpKru9vsfZrVxj5skqjfwRVetOrSPOU38Qtd05f9ilBr0ej4Vt-v_guH1-dtX2gOEHVmC0)
  
+# Test
+Public url : [http://localhost:8080/products/](http://localhost:8080/products/) <br><br>
+
+Login url : [http://localhost:8080/login](http://localhost:8080/login) <br>
+POST with body content = {"username":"jwtadmin","password":"jwtadmin"} <br>
+Get the Authorization token from header. <br><br>
+
+Secured url : [http://localhost:8080/products/secure](http://localhost:8080/products/secure) <br>
+Add Authorization token in the header and fire the url<br>
+
 # Conclusion
 Hope this short explanation is helpful to you to understand the basic concepts.<br>
 Don't hesitate to download the code and play.
