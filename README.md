@@ -17,7 +17,7 @@ Tipically contain an expiration time<br>
 - We have  <a href="https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language"> SAML - Security Assertion markup language token </a> (Used mostly in SOAP)  and <br>
 - Simple Web Token <a href="https://msdn.microsoft.com/en-us/library/azure/hh781551.aspx">SWT</a>
 
-# How it works
+# How it works ?
 Now that we have a little knowledge on JWT, let's dive into the application.<br>
 Here are the two GET methods of the *ProductRestResource* endpoint.
 ```java
