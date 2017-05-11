@@ -78,5 +78,5 @@ class TokenAuthenticationService {
 Hope this short explanation is helpful to you to understand the basic concepts.<br>
 Don't hesitate to download the code and play.
 
-**Your comments and suggestions are most welcome!** <br><br>
-Cheers! <br> [@SreenuDoosari](https://twitter.com/SreenuDoosari)
+**Your comments and suggestions are most welcome!** <br>
+My twitter handle :  [@SreenuDoosari](https://twitter.com/SreenuDoosari) 
