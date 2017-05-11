@@ -38,7 +38,7 @@ public class ProductRestResource {
 	}
 }
 ```
-As you can see **/products** path is public  and <br>
+As you can see **/products** path is public , which requires no authentication  and <br>
 **/products/secure** is annotated with **@JWTTokenNeeded** , this annotation verifies the token passed by the client in the header
 and validates it.<br>
 Here's how we generate the JWT token.
